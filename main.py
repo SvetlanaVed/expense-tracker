@@ -34,7 +34,7 @@ class ExpenseRepository:
         connection = None
         try:
             connection = sqlite3.connect(path, isolation_level=None)
-            print("DB esta lista")
+            print("DB is ready")
 
         except sqlite3.Error as error:
             raise error
